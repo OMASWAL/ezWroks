@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./cssFiles/contact.css";
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -53,12 +54,12 @@ function ContactForm() {
     <div className="contact-container">
       <h2>Contact Us</h2>
 
-      <form onSubmit={handleSubmit}>
+      <form className="forms" onSubmit={handleSubmit}>
         
         <input
           type="text"
           name="name"
-          placeholder="Enter Name"
+          placeholder="Enter Your Name"
           value={formData.name}
           onChange={handleChange}
         />
@@ -66,7 +67,7 @@ function ContactForm() {
         <input
           type="email"
           name="email"
-          placeholder="Enter Email"
+          placeholder="Enter Your Email"
           value={formData.email}
           onChange={handleChange}
         />
@@ -74,7 +75,7 @@ function ContactForm() {
         <input
           type="text"
           name="phone"
-          placeholder="Enter Phone"
+          placeholder="Enter Your Phone"
           value={formData.phone}
           onChange={handleChange}
         />

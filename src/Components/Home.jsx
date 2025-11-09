@@ -1,8 +1,12 @@
 import React from 'react'
 import "./cssFiles/home.css"
+import NavBar from './NavBar.jsx'
+
 
 const Home = () => {
   return (
+  <>
+    <NavBar/>
     <div className='home-container'>
         <div className="image1">
           <img  src="/images/image3.png" alt="image" />
@@ -20,6 +24,7 @@ const Home = () => {
           </div>
         </div>
     </div>
+  </>
   )
 }
 
